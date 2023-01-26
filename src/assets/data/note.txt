@@ -1,0 +1,33 @@
+
+    
+-Lazy loading technique
+       - used to avoid high traffic in sites
+
+-Module creation 
+    -ng g module moduleName
+
+-Lazy loaded module creation
+    -ng g module moduleName --route moduleName --module rootmoduleName
+
+
+to install json server
+  -npm i --save json-server
+
+  -npx json-server --watch db.json --port 3000
+
+
+access data from component path
+-------------------------------
+
+ActivatedRoute   -class
+params           -method
+
+-to generate pipe
+      -ng g pipe pipeName
+
+
+Behaviour subject in angular 
+---------------------------
+  to share data between modules
+ rxjs
+

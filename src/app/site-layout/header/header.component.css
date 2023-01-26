@@ -1,0 +1,13 @@
+
+.navbar{
+    background-color: white;
+}
+.text{
+    text-decoration: none; color: black; 
+    font-weight: 600;
+}
+.text:hover{
+   text-decoration: underline;
+   color: rgb(0, 0, 162);
+
+}

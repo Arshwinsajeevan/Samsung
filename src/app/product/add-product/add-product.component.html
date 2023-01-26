@@ -1,0 +1,18 @@
+<div class="container w-50 text-center">
+    <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"  class="text-center pt-3 mt-5">Add Product</h1> 
+    
+    <form (ngSubmit)="addNewProduct()" [formGroup]="addProductForm" action="">
+        <input formControlName="id" id="pid" name="p1" type="text" class="form-control mt-5" placeholder="Product ID"><br>
+        <input formControlName="productName" id="pname" name="p2" type="text" class="form-control" placeholder="Product name"><br>
+        <input formControlName="categoryId" id="cid" name="p3" type="text" class="form-control" placeholder="Category ID"><br>
+        <input formControlName="color" id="clr" name="p4" type="text" class="form-control" placeholder="Colour"><br>
+        <input formControlName="description" id="did" name="p5" type="text" class="form-control" placeholder="Description ID"><br>
+        <input formControlName="is_available" id="isavail" name="p6" type="text" class="form-control" placeholder="Is available"><br>
+        <input formControlName="productImg" id="pimg" name="p7" type="text" class="form-control" placeholder="Product image"><br>
+        <input formControlName="rating" id="prat" name="p8" type="text" class="form-control" placeholder="Product rating"><br>
+        <input formControlName="review" id="prev" name="p9" type="text" class="form-control" placeholder="Product review"><br>
+        <input formControlName="price" id="price" name="p11" type="number" class="form-control" placeholder="Price"><br>
+        <input formControlName="warrenty" id="wrnty" name="p12" type="text" class="form-control" placeholder="Warrenty"> <br>
+     <button style="background-color: black; border-radius: 20px;" class="text-white ps-3 pe-3">Add Product</button><br><br><br><br> 
+    </form>
+</div>  

@@ -1,0 +1,37 @@
+
+
+<section class="py-5 ">
+    <div class="container px-4 px-lg-5 my-5 p-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{productdata.productImage}}" alt="..." />
+            </div>
+            <div class="col-md-6">
+                <div class="small mb-1">Color : {{productdata.color}}</div>
+                <h3 style="font-family: 'Lato', sans-serif; " class="display-6 ">{{productdata.productName}}</h3>
+                <div class="fs-5 mb-5">
+                    <h6 class=" mt-4">{{productdata.description}}</h6>
+                    <span class="text-decoration-line-through"></span>
+                    <span style="font-family: 'Lato', sans-serif;">Rs : {{productdata.price}}</span>
+                    <hr>
+                </div>
+
+                <h6 style="font-weight: 400; font-size: medium;" class="lead ">Rating : {{productdata.rating}}</h6>
+                <h6 style="font-weight: 400; font-size: medium;" class="lead">Review : {{productdata.review}}</h6>
+                <h6 style="font-weight: 400; font-size: medium;" class="lead">Warrenty : {{productdata.warrenty}}</h6>
+
+                <br>
+                <button class="ps-3 pe-3" style="background-color: black; border-radius: 20px;" type="button">
+
+                    <a style="text-decoration: none; color: white; font-size: small; font-weight: 600;"
+                        href="product/edit-product/{{productdata.id}}">Edit</a>
+                    <i class="fa-regular fa-pen-to-square text-light ms-1"></i>
+                </button>
+                <button class="ps-3 pe-3 ms-3" style="background-color: black; border-radius: 20px;" type="button">
+                    <a style="text-decoration: none; color: white; font-size: small; font-weight: 600;"
+                        href="product/delete-product/{{productdata.id}}">Delete</a>
+                    <i class="fa-solid fa-trash text-light ms-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

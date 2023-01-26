@@ -1,0 +1,24 @@
+ <!-- Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="ms-5"><a href="/product"> <img src="../../../assets/samsung-1-logo-png-transparent.png" style="width: 140px; height: 18px;" alt=""></a></div>
+    <div class="container px-4 px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-2">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Mobile</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home Appliances</a></li>
+            </ul>
+            <form class="d-flex">
+                <input (keyup)="search($event)" [(ngModel)]="searchterm" id="search" name="srch" style="border-radius: 7px; border: 1px solid;" class="text-center" placeholder="Search Product" type="text">
+                <button class="btn btn-light"><i class="fa-solid fa-magnifying-glass fs-5 mt-1"></i></button>
+               <button class="btn btn">
+                <a class="text" href="product/add-product"> Add Product</a>
+               </button>
+               
+            </form>
+        </div>
+    </div>
+</nav>
+
+

@@ -1,0 +1,17 @@
+<div class="container w-50 text-center">
+    <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"  class="text-center pt-3 mt-5">Update Product</h1>
+    <form (ngSubmit)="updateProduct(updateproductform)" #updateproductform="ngForm" action="">
+        <input [(ngModel)]="productdata.id" id="pid" name="p1" type="text" class="form-control mt-5" placeholder="Product ID"><br>
+        <input [(ngModel)]="productdata.productName" id="pname" name="p2" type="text" class="form-control" placeholder="Product name"><br>
+        <input [(ngModel)]="productdata.categoryId" id="cid" name="p3" type="text" class="form-control" placeholder="Category ID"><br>
+        <input [(ngModel)]="productdata.color" id="clr" name="p4" type="text" class="form-control" placeholder="Colour"><br>
+        <input [(ngModel)]="productdata.description" id="did" name="p5" type="text" class="form-control" placeholder="Description ID"><br>
+        <input [(ngModel)]="productdata.price" id="price" name="p11" type="number" class="form-control" placeholder="Price"><br>
+        <input [(ngModel)]="productdata.is_available" id="isavail" name="p6" type="text" class="form-control" placeholder="Is available"><br>
+        <input [(ngModel)]="productdata.productImage" id="pimg" name="p7" type="text" class="form-control" placeholder="Product image"><br>
+        <input [(ngModel)]="productdata.rating" id="prat" name="p8" type="text" class="form-control" placeholder="Product rating"><br>
+        <input [(ngModel)]="productdata.review" id="prev" name="p9" type="text" class="form-control" placeholder="Product review"><br>
+        <input [(ngModel)]="productdata.warrenty" id="wrnty" name="p12" type="text" class="form-control" placeholder="Warrenty"> <br>
+        <button style="background-color: black; border-radius: 20px;" class="text-white ps-3 pe-3">Edit Product</button><br><br><br>
+    </form>
+</div>
